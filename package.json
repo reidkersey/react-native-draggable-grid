@@ -1,20 +1,20 @@
 {
-  "name": "react-native-draggable-grid",
+  "name": "react-native-draggable-grid-with-disable",
   "keywords": [
     "drag",
     "sortable",
     "grid"
   ],
-  "version": "1.1.0",
+  "version": "1.1.5",
   "description": "A draggable grid for react native",
   "main": "built/index.js",
   "types": "src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SHISME/react-native-draggable-grid"
+    "url": "https://github.com/reidkersey/react-native-draggable-grid"
   },
   "scripts": {
-    "built": "rm -rf built && tsc",
+    "built": "del built && tsc",
     "watch": "tsc -w --outDir demo/built"
   },
   "author": "shisme",

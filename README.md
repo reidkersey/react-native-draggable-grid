@@ -5,6 +5,20 @@
 
 [中文文档](./README_CN.md)
 
+## Why the fork?
+What was attempted:
+I attempted to modify the code in such a way that when an object had a key that ended in noMove, that item would become disabled, and could not be moved.
+
+What is working:
+When this receives an item whos key ends in `noMove` it does not allow the user to directly move that item (disabled long press)
+
+What is broken:
+The user can still move the 'unmovable' item by moving other object in front of or behind the disabled object.
+
+Why:
+This was a (failed) attempt to make a draggable item inactive. Unfortunately the original code is written in such a way that you can eaisly disble on click events (what this does), but you are unable (without a significant code overhaul) to remove an item from the map to prevent it from moving when another item gets placed behind or in front of the disbled item.
+
+
 ## Demo
 
 <p align="center">
@@ -17,7 +31,7 @@
 ## Installation
 
 ```bash
-npm install react-native-draggable-grid --save
+npm install react-native-draggable-grid-with-disable --save
 ```
 
 ## Usage
