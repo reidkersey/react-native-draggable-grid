@@ -44,7 +44,7 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
-import { DraggableGrid } from 'react-native-draggable-grid';
+import { DraggableGrid } from 'react-native-draggable-grid-with-disable';
 
 interface MyTestProps {
 
@@ -69,7 +69,7 @@ export class MyTest extends React.Component<MyTestProps, MyTestState>{
         {name:'7',key:'seven'},
         {name:'8',key:'eight'},
         {name:'9',key:'night'},
-        {name:'0',key:'zero'},
+        {name:'0',key:'zero noMove'},
       ],
     };
   }
